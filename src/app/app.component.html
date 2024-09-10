@@ -15,7 +15,8 @@
   <p class="mt-10">Tengo una lista para tí ¿Deseas verla?</p>
   <input type="checkbox" (change)="toggleComponent($event)"  class="mt-5 optionButton" /> Habilite aquí para poder ver el contenido.
 
-  <app-test-component *ngIf="optionButton"></app-test-component>
-  <router-outlet></router-outlet>
 
 </div>
+
+<app-test-component *ngIf="optionButton"></app-test-component>
+<router-outlet></router-outlet>
