@@ -1,15 +1,18 @@
-<p class="m-2">A continuación te dejaré una lista de objetos.</p>
+<div class="componentDiv">
+  <p>A continuación te dejaré una lista de objetos.</p>
+  <div class="example-card">
 
-<div class="w-full card flex flex-row gap-x-3 row-auto">
-
-  <div *ngFor="let character of characters" class="item">
-
-    <img src="{{character.image}}" class="characterImage">
-    <h2 class="text-2xl">{{character.name}}</h2>
-    <p class="descriptionText">{{character.description}}</p>
+    <div *ngFor="let character of characters" class="item">
+      <div class="imageC">
+        <img src="{{character.image}}" class="characterImage" alt="Image Character">
+      </div>
+      <div class="principalInfo">
+        <h1>{{character.name}}</h1><mat-chip-list aria-label="Fish selection"><mat-chip color="warn" selected >KI: {{character.ki}}</mat-chip></mat-chip-list>
+      </div>
+      <p class="descriptionText">{{character.description}}</p>
+    </div>
 
   </div>
-
 </div>
 
 

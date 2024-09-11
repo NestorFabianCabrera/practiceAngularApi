@@ -10,12 +10,10 @@
   <input type="text" [(ngModel)]="name">
 -->
 
-<div class="container mx-auto px-4 lg lg:w-[740px]">
-  <h1 class="text-blue-500  text-center text-3xl font-bold mt-5">¡Hola, soy Simio!</h1>
+<div class="container">
+  <h1>¡Hola, soy Simio!</h1>
   <p class="mt-10">Tengo una lista para tí ¿Deseas verla?</p>
-  <input type="checkbox" (change)="toggleComponent($event)"  class="mt-5 optionButton" /> Habilite aquí para poder ver el contenido.
-
-
+  <mat-checkbox class="" (change)="toggleComponent($event)">Haz click para habilitar el contenido.</mat-checkbox>
 </div>
 
 <app-test-component *ngIf="optionButton"></app-test-component>

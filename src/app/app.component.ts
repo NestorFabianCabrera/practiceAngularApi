@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {ApiService} from "./services/api.service";
-
+import { MatCheckboxChange } from '@angular/material/checkbox';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,15 +7,16 @@ import {ApiService} from "./services/api.service";
 })
 
 export class AppComponent{
-  name! : string;
+  /*name! : string;
   title : string = 'Simio - Practice Angular';
-  cities: string[] = ['Medellin', 'Bucaramanga', 'Cucuta'];
+  cities: string[] = ['Medellin', 'Bucaramanga', 'Cucuta'];*/
 
 
   optionButton: boolean = false;
 
-  toggleComponent(event: any): void {
-    this.optionButton = event.target.checked;
+  toggleComponent(event: MatCheckboxChange): void {
+    this.optionButton = event.checked;
+    console.log(this.optionButton);
   }
 
 }
