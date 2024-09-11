@@ -1,0 +1,17 @@
+<div *ngIf="character" class="CardModalInfo">
+
+  <h2 mat-dialog-title>{{ character.name }}</h2>
+
+  <mat-dialog-content>
+    <div class="imageC">
+      <img [src]="character.image" alt="Character Image" class="imageCharacter"/>
+    </div>
+    <p><span class="titleInfo">KI:</span> {{ character.ki }}</p>
+    <p><span class="titleInfo">DESCRIPCIÓN:</span> {{ character.description }}</p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button color="warn" mat-button mat-dialog-close class="closeButton">Close</button>
+  </mat-dialog-actions>
+
+</div>

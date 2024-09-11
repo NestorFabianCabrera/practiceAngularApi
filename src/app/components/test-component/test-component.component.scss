@@ -4,8 +4,16 @@
   background-color: darkslateblue;
   margin-bottom: 2rem;
   padding: 3rem;
-  border-radius: 2%;
+  border-radius: 4%;
   color: white;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.item:hover{
+  background-color: darkslategrey;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .characterImage {

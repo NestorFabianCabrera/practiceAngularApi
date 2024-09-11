@@ -19,7 +19,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getData() : Observable<data>{
-    const endpoint = "characters?page=4";
+    const endpoint = "characters?page=5";
     return this.http.get<data>(this.urlApi + endpoint);
   }
 }

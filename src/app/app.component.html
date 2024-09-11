@@ -13,7 +13,7 @@
 <div class="container">
   <h1>¡Hola, soy Simio!</h1>
   <p class="mt-10">Tengo una lista para tí ¿Deseas verla?</p>
-  <mat-checkbox class="" (change)="toggleComponent($event)">Haz click para habilitar el contenido.</mat-checkbox>
+  <mat-checkbox color="primary" (change)="toggleComponent($event)">Haz click para habilitar el contenido.</mat-checkbox>
 </div>
 
 <app-test-component *ngIf="optionButton"></app-test-component>
